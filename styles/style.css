@@ -82,7 +82,11 @@ header #toggle
     transition: 0.5s;
     z-index: 2;
 }
-
+.banner .profileImg
+{
+    display: flex;
+    justify-content: center;
+}
 .banner.active
 {
     transform: translateX(-400px);
@@ -212,7 +216,6 @@ header #toggle
     right: 100px;
     list-style: none;
 }
-
 .sci li a
 {
     position: relative;
@@ -241,24 +244,23 @@ section{
     gap: 100px;
     margin-top: auto;
   }
-  .toc h1{
-    
+.toc h1{    
     border: 5px solid #fff;
     text-align: center;
     margin-bottom: 10px;
     background: #2196f3;
     color: #fff;
   }
-  .toc ul 
+.toc ul 
   {
       position: relative;
       display: flex;
       flex-direction: column;
   }
-  .toc ul li {
+.toc ul li {
       list-style: none;
   }
-  .toc ul li:before{
+.toc ul li:before{
       content: attr(data-text);
       position: absolute;
       top: 50%;
@@ -273,11 +275,11 @@ section{
       transition: 0.5s;
       white-space: nowrap;
   }
-  .toc ul li:hover:before{
+.toc ul li:hover:before{
       opacity: 0.5;
       letter-spacing: 0px;
   }
-  .toc ul li a {
+.toc ul li a {
       position: relative;
       display: inline-block;
       padding: 6px 15px;
@@ -290,18 +292,16 @@ section{
       transition: 0.5s;
       z-index: 1;
   }
-  .toc ul:hover li a{
+.toc ul:hover li a{
       opacity: 0;
   }
-  
-  .toc ul li a:hover{
+.toc ul li a:hover{
       transform: scale(1.4);
       z-index: 1000;
       background: #ff3f81;
       opacity: 1;
   }
-  
-  .toc ul li a:before{
+.toc ul li a:before{
       content: '';
       position: absolute;
       top: 0;
@@ -313,14 +313,12 @@ section{
       transform: skewX(35deg);
       transition: 0s;
   }
-  
-  .toc ul li a:hover:before{
+.toc ul li a:hover:before{
       left: calc(100% + 100px);
       transition: 0.5s;
       transition-delay: 0.2s;
   }
-
-  .clockMenu
+.clockMenu
   {
       display: flex;
       align-items: center;
@@ -419,6 +417,10 @@ section{
     .banner
     {
         padding: 100px 50px 150px;
+    }
+    .banner .profileImg img
+    {
+       display: none;
     }
     .banner h2 
     {
