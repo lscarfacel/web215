@@ -406,7 +406,7 @@ section{
 
 
 /* .short-text { display: none; } */
-@media (max-width: 858px)
+@media (max-width: 950px)
 {   
     /* .short-text { display: inline-block; }
     .full-text { display: none; } */
@@ -462,7 +462,7 @@ section{
         bottom: 50px;
         right: initial;
         flex-direction: row;
-        margin-left: 180px;
+        margin-left: 300px;
     }
     .valid li a 
     {
