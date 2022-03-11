@@ -403,9 +403,80 @@ section{
     z-index: 12;
     border-radius: 6px 6px 0 0;
 }
+/******************* Brand Board style ***********************/
+.colorPalette
+{   
+    flex-direction: column;
+    row-gap: 2px;
+    
+    
+}
+.colorPalette ul
+{
+    list-style: none;
+    flex-direction: row;
+}
+.colorPalette li
+{
+    border: 5px solid rgb(190, 238, 15);
+    width: 150px;
+    color: #15cc1f;
+    font-weight: 900;
+}
+#bColor1
+{
+    padding: 30px;
+    background-color: #ffffff;
+    
+}
+#bColor2
+{
+    padding: 30px;
+    background-color: #eaa088;
+    
+}
+#bColor3
+{
+    padding: 30px;
+    background-color: #ececee;
+    
+}
+#bColor4
+{
+    padding: 30px;
+    background-color: #505050;
+    
+}
+#fColor1
+{
+    
+    padding: 30px;
+    background-color: #e92e00;
+    
+}
+#fColor2
+{
+    padding: 30px;
+    background-color: #ffffff;
+    
+}
+#fColor3
+{
+    padding: 30px;
+    background-color: #000000;
+    
+}
 /********************** brand style **************************/
 /*********** navbar ************/
 /* Add a black background color to the top navigation */
+#brand h1
+{
+    color: #d2371a;
+}
+#brand p
+{
+    
+}
 .brandMenu {
     background-color: rgba(80, 80, 80, 0.5);
     overflow: hidden;
@@ -526,13 +597,20 @@ dl dt {
     text-decoration: none;
     align-items: center;
 }
-.challenges ul, a, li
+.challenges ul
 {
     padding: 30px;
     font-size: 30px;
-    list-style: none;
+}
+.challenges a
+{
     text-decoration: none;
     color: #000;
+    margin: 30px;
+}
+.challenges ul li
+{
+    list-style: none;
 }
 .challenges p
 {
