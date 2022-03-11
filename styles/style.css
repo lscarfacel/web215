@@ -408,13 +408,11 @@ section{
 {   
     flex-direction: column;
     row-gap: 2px;
-    
-    
 }
 .colorPalette ul
 {
     list-style: none;
-    flex-direction: row;
+    display: inline-flex;   
 }
 .colorPalette li
 {
@@ -427,44 +425,36 @@ section{
 {
     padding: 30px;
     background-color: #ffffff;
-    
 }
 #bColor2
 {
     padding: 30px;
-    background-color: #eaa088;
-    
+    background-color: #eaa088; 
 }
 #bColor3
 {
     padding: 30px;
     background-color: #ececee;
-    
 }
 #bColor4
 {
     padding: 30px;
     background-color: #505050;
-    
 }
 #fColor1
 {
-    
     padding: 30px;
     background-color: #e92e00;
-    
 }
 #fColor2
 {
     padding: 30px;
     background-color: #ffffff;
-    
 }
 #fColor3
 {
     padding: 30px;
     background-color: #000000;
-    
 }
 /********************** brand style **************************/
 /*********** navbar ************/
