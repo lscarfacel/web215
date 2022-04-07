@@ -26,7 +26,8 @@ header
     font-family: 'The Nautigal', cursive;
     position: relative;
     font-weight: 700;
-    color: #fff;
+    color: #38b5ff;
+    text-shadow: 2px 2px 4px #000000;
     text-decoration: none;
     font-size: 4em;
     letter-spacing: 2px;
@@ -183,58 +184,35 @@ header #toggle
     font-size: 1.2em;
     font-weight: 500;
 }
-.valid
-{   margin-top:400px;
+
+.sci 
+{
+    bottom: 1%;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 100px;
-    list-style: none;
+    display: inline-block;
+    background-color: #091921;
+    text-align: center;
+    color: #ccc;
+    width: 90%;
 }
-.valid li a
+.sci img {
+    margin: 15px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.sci img:hover
 {
-    position: relative;
-    display: grid;
-    place-items: center;
-    margin: 10px 0 0;
-    text-decoration: none;
+    background: rgb(252, 0, 0) 50px;
+    
 }
-.valid li a:hover
-{
-    background: #fff;
-}
-.valid li a img
+.sci a img
 {
     filter: invert(1);
     max-width: 50px;
-}
-.sci
-{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 100px;
-    list-style: none;
-}
-.sci li a
-{
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fff;
-    margin: 10px 0 0;
-    text-decoration: none;
-}
-.sci li a:hover
-{
-    background: #fff;
-}
-.sci li a img
-{
-    filter: invert(1);
-    max-width: 25px;
+    max-height: 50px;
+    padding: 5px;
+    
 }
 
 /* Menu */
@@ -626,7 +604,7 @@ dl dt {
       border-radius: 50%;
       padding:0 30px 0 30px;
   }
-.aboutText
+ .aboutText
   {
     padding: 5%;
   }
@@ -710,6 +688,9 @@ dl dt {
 {   
     /* .short-text { display: inline-block; }
     .full-text { display: none; } */
+    .logo img {
+        max-width: 40%;
+    }
     header
     {
         padding: 20px 50px;
@@ -747,26 +728,8 @@ dl dt {
     .sci 
     {
         position: absolute;
-        bottom: 50px;
-        right: initial;
-        flex-direction: row;
+        bottom: 0;   
     }
-    .sci li a 
-    {
-        margin: initial;
-        margin-right: 10px;
-    }
-    .valid
-    {
-        position: absolute;
-        bottom: 50px;
-        right: initial;
-        flex-direction: row;
-        margin-left: 300px;
-    }
-    .valid li a 
-    {
-        margin: initial;
-        margin-left: 15px;
-    }
+    
+    
 }
