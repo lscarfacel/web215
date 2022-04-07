@@ -1,7 +1,19 @@
-<nav class="brandMenu">
-        <a class="active" href="#home">Home</a>
-        <a href="#events">Events</a>
-        <a href="#challenges">Challenges</a>
-        <!-- <a href="#forum">Forum</a> -->
-        <a href="#about">About</a>   
-</nav>
+<div id="navigation">
+        <ul>
+            <li><a href="https://lscarfacel.github.io/web215/introduction.html">Home</a></li>
+            <li><a href="https://lscarfacel.github.io/web215/introduction.html">Introduction</a></li>
+            <li><a href="https://lscarfacel.github.io/web215/contract.html">Contract</a></li>
+            <li><a href="https://lscarfacel.github.io/web215/brandBoard.html">Brand Guide</a></li>
+            <!-- <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li> -->
+        </ul>
+    </div>
+
+    <script>
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
