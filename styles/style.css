@@ -148,6 +148,7 @@ header #toggle
     display: block;
     background: rgba(0,0,0,0.7);
     margin: auto;
+    padding: 10px;
 }
 .content ul
 {
