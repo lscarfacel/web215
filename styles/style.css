@@ -22,17 +22,22 @@ header
 }
 .logo
 {
-    
+    font-family: 'The Nautigal', cursive;
+    font-weight: 800;
+    color: #0ecfff;
+    text-shadow: 0px 0px 3px #000000;
+    text-decoration: none;
     font-size: 3em;
     letter-spacing: 2px;
     transition: 0.6s;
+    display: block;
+    
 }
 .catchphrase{
     font-family: 'The Nautigal', cursive;
-    font-weight: 700;
-    color: #38b5ff;
+    font-weight: 800;
+    color: #0ecfff;
     text-shadow: 2px 2px 4px #000000;
-    text-decoration: none;
     font-size: 3em;
     letter-spacing: 2px;
     transition: 0.6s;
