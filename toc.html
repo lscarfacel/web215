@@ -9,10 +9,8 @@
 </head>
 <body>
     <section class="banner" id="sec">
-        <header>
-            <a href="#" class="logo">EM</a>
-            <div id="toggle" onclick="toggle()"></div>
-        </header>
+        <!-- header includes logo and menu -->
+        <div data-include="components/header.html"></div>
         <section class="clockMenu">
             <aside class="toc">
                 <h1>CONTENTS</h1>
@@ -36,48 +34,17 @@
             </div>
             <script src="scripts/script.js"></script>
         </section>  
-        <ul class="sci">
-            <li>
-                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/linkedin.png" alt="Linkedin"></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/github.png" alt="Github"></a>
-            </li>
-            
-        </ul>
-        <ul class="valid">
-            <li>
-                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flscarfacel.github.io%2Fweb250%2F"><img src="images/html5.png" alt="w3c html5"></a>
-            </li>
-            <li>
-                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flscarfacel.github.io%2Fweb250%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="images/css.png" alt="w3c css"></a>
-            </li>
-        </ul>
+ 
+        <!--Footer -->
+        <div data-include="components/footer.html"></div>
     </section>
-    <div id="navigation">
-        <ul>
-            <li><a href="https://lscarfacel.github.io/web215/introduction.html">Home</a></li>
-            <li><a href="https://lscarfacel.github.io/web215/introduction.html">Introduction</a></li>
-            <li><a href="https://lscarfacel.github.io/web215/contract.html">Contract</a></li>
-            <li><a href="https://lscarfacel.github.io/web215/brandBoard.html">Brand Guide</a></li>
-        </ul>
-    </div>
-    <ul>
-        
-    </ul>
-    <script>
-        function toggle(){
-            var sec = document.getElementById('sec');
-            var nav = document.getElementById('navigation');
-            sec.classList.toggle('active');
-            nav.classList.toggle('active');
-        }
-    </script>
+        <!-- Navigation Menu -->
+        <div data-include="components/nav.html"></div>
+        <!-- scripts -->
+        <script src="scripts/htmlinclude.js"></script>
+    </body>
+</html>
+    
+    
 </body>
 </html>
