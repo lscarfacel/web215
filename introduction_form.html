@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction Form</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <main class="banner" id="sec">
+            <!-- header includes logo and menu -->
+            <div data-include="components/header.html"></div>
+            
+            <!-- content of the page -->
+            <div class="content">
+                <form id="introForm">
+                    <ul>
+                        <li>
+                            <label for="firstName">First Name: </label>
+                            <input type="text" id="firstName" value ="Enmanuel" required>
+                        </li>
+
+                        <li>
+                            <label for="lastName">Last Name: </label>
+                            <input type="text" id="lastName" value ="Marte" required>
+                        </li>
+
+                        <li>
+                            <label for="personal">Personal Background: </label>
+                            <textarea id="personal" required>I moved form the Dominican Republic to Charlotte North Carolina in 2009. I have been studying and working since.</textarea>
+                         </li>
+
+                         <li>
+                            <label for="professional">Professional Background: </label>
+                            <textarea id="professional" required>I been working part-time and doing side gigs. I have opened two companies one got sold and the other one I kind of retired from.
+                                Side gigs: Business start-up assistant, Notary Public, WP developer, Graphics design, Photography, Auto sales, Construction, Spanish & small business startup Tutor.</textarea>
+                    
+                        </li>
+                        <li>
+                            <label for="academic">Academic Background: </label>
+                            <textarea id="academic" required>Graduated from POB academy of technology in 2010, Automobile Technology 2014, IT business Analysis AAS 2020, IT Full Stack Programming AAS 2022 </textarea>
+                        </li>
+                        <li>
+                            <label for="platform">Primary Computer Platform: </label>
+                            <input type="text" id="platform" value="Windows 10" required>
+                        </li>
+                        <li>
+                            <label for="courses">Courses I'm Taking: </label>
+                            <textarea id="courses" required>CSC221-N801: Advanced Python Programming. Required| |CSC151-H113: JAVA Programming. Required| |WEB250-N801: Database Driven Websites. Required| |WEB215-N801: Adv Markup and Scripting. Required</textarea>
+                        </li>
+                        <li>
+                            <label for="funnyFact">Funny/Interesting thing about yourself: </label>
+                            <textarea id="funnyFact" required>People think I am 22 for some reason I don’t see. I guess its good.</textarea>
+                        </li>
+                        <li>
+                            <label for="funnyFact1">I'd also like to share: </label>
+                            <textarea id="funnyFact1" required>I will be planting a lot of vegetables this year. So free veggies for everyone!</textarea>
+                        </li>
+                        <li>
+                            
+                            <p>What was the name of the group that included Frank Sinatra, Dean Martin, and Sammy Davis Jr?</p>
+                            <input type="radio" id="age1" name="answer" value="The Bat Boys">
+                            <label for="age1">The Bat Boys</label><br>
+                            <input type="radio" id="age2" name="answer" value="The Blues Gang">
+                            <label for="age2">The Blues Gang</label><br>  
+                            <input type="radio" id="age3" name="answer" value="The Rat Pack">
+                            <label for="age3">The Rat Pack</label><br>
+
+                        </li>
+                        <li>
+                            <p>What pet do have?</p>
+                            <input type="checkbox" id="pet1" name="choices" value="Dog">
+                            <label for="pet1"> A dog</label><br>
+                            <input type="checkbox" id="vehicle2" name="choices" value="Cat">
+                            <label for="pet2"> A cat</label><br>
+                            <input type="checkbox" id="vehicle3" name="choices" value="Bird">
+                            <label for="pet3"> A bird</label><br>
+
+                        </li>
+                    </ul>
+                </form>
+ 
+                <button class = "button" type="button" id="submit" onclick="return getData()" value="Submit">Submit</button>
+                <section>
+                    <ul id="showData"></ul>
+                </section>
+     
+            </div>
+
+        <!--Footer -->
+
+        <div data-include="components/footer.html"></div>
+        </main>
+        <!-- Navigation Menu -->
+        <div data-include="components/nav.html"></div>
+        <!-- scripts -->
+        <script src="scripts/htmlinclude.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
