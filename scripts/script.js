@@ -64,7 +64,8 @@ function getData() {
   output.push(' ' + checkbox.value)
   });
   var finalChecks = ("You have a" + output + ' as a pet');
-  let formData = [fullName, personal, professional, academic, platform, courses, funnyFact, funnyFact1, answer, finalChecks];
+  let formData = [fullName, personal, professional, academic,
+     platform, courses, funnyFact, funnyFact1, answer, finalChecks];
   showData(formData);
   }
 
