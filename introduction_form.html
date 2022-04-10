@@ -73,7 +73,7 @@
 
                         </li>
                         <li>
-                            <p>What pet do have?</p>
+                            <p>What pets do you have?</p>
                             <input type="checkbox" id="pet1" name="choices" value="Dog">
                             <label for="pet1"> A dog</label><br>
                             <input type="checkbox" id="vehicle2" name="choices" value="Cat">
@@ -85,15 +85,23 @@
                     </ul>
                 </form>
  
-                <button class = "button" type="button" id="submit" onclick="return getData()" value="Submit">Submit</button>
+                <button  id="button" type="button" onclick="getData()">Submit</button>
+
+                <script>
+                    const btn = document.getElementById('button');
+                    btn.addEventListener('click', () => {
+                    btn.style.display = 'none';
+                    });
+                </script>
+                
                 <section>
                     <ul id="showData"></ul>
                 </section>
-     
+                
             </div>
 
         <!--Footer -->
-
+      
         <div data-include="components/footer.html"></div>
         </main>
         <!-- Navigation Menu -->
