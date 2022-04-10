@@ -290,7 +290,7 @@ header #toggle
     height: 5em;
   }
   
-  .button {
+  #button {
     text-align: center;
     margin: auto;
     display: flex;
@@ -299,7 +299,7 @@ header #toggle
     font-size: 20px;
 
   }
-  .button:hover{
+  #button:hover{
       background-color: #40c3ff;
       transition: 0.5s;
   }
